@@ -1,0 +1,116 @@
+{
+  "seed": 42,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2"
+  },
+  "runtime": "local",
+  "min_object_points": 5,
+  "frame_limit": null,
+  "datasets": {
+    "kitti": "data/kitti_mini",
+    "nuscenes": "data/nuscenes_mini_subset"
+  },
+  "threshold_pct": 81.64628476803568,
+  "threshold_method": "5th percentile of clean first-half KITTI frame scores; alarm score < threshold",
+  "calibration_ids": [
+    "000001",
+    "000004",
+    "000007",
+    "000008",
+    "000009",
+    "000010",
+    "000011",
+    "000012",
+    "000015",
+    "000016"
+  ],
+  "evaluation_ids": [
+    "000019",
+    "000021",
+    "000023",
+    "000025",
+    "000031",
+    "000032",
+    "000043",
+    "000048",
+    "000049",
+    "000061"
+  ],
+  "geometry_failure": {
+    "dataset": "kitti",
+    "frame_id": "000023",
+    "factor": "yaw_deg",
+    "value": 3.0,
+    "finite_points": 120412,
+    "fov_points": 18594,
+    "fov_pct": 15.441982526658473,
+    "eligible_objects": 3,
+    "object_points": 107,
+    "inside_box_points": 0,
+    "macro_box_pct": 0.0,
+    "micro_box_pct": 0.0,
+    "median_shift_px": 37.97848267209232,
+    "split": "evaluation",
+    "threshold_pct": 81.64628476803568,
+    "has_score": true,
+    "alarm": true
+  },
+  "metric_failure": {
+    "dataset": "kitti",
+    "frame_id": "000049",
+    "factor": "yaw_deg",
+    "value": 1.0,
+    "finite_points": 113691,
+    "fov_points": 18174,
+    "fov_pct": 15.985434203235085,
+    "eligible_objects": 17,
+    "object_points": 4673,
+    "inside_box_points": 4255,
+    "macro_box_pct": 87.82499453065465,
+    "micro_box_pct": 91.05499679007062,
+    "median_shift_px": 14.667265708072735,
+    "split": "evaluation",
+    "threshold_pct": 81.64628476803568,
+    "has_score": true,
+    "alarm": false
+  },
+  "actual_missed_detection": true,
+  "clean_false_alarm_frames": [],
+  "demo_depths": [
+    {
+      "frame_id": "000019",
+      "object_id": 1,
+      "class_name": "Car",
+      "depth_m": 9.72
+    },
+    {
+      "frame_id": "000011",
+      "object_id": 4,
+      "class_name": "Car",
+      "depth_m": 4.13
+    },
+    {
+      "frame_id": "000004",
+      "object_id": 0,
+      "class_name": "Car",
+      "depth_m": 38.26
+    }
+  ],
+  "sources": [
+    "KITTI Vision Benchmark Suite",
+    "nuScenes (Motional)"
+  ],
+  "csv_sha256": {
+    "demo_depths.csv": "e6c88741f85bb9e6100d600f9ff155ed72ab994014f646b215b2982ba0b5bb2c",
+    "detection_summary.csv": "3ea88eda7b274e7f22601886ee91b07152f9ceda91e0c28dd70ecb7122c261e0",
+    "drift_detection.csv": "3fb354b54b625ccd5a02e214c94bba855c297b473aa56f79aa7f529ba58f12be",
+    "frame_metrics.csv": "79393aa4eb04c159b8913bb6579fedcf5a951fcd3ea8d2919d39bebe9b41072f",
+    "object_metrics.csv": "98269242e4d0cd13f4f80fc459f1200db3d8e8fecd4cf417d38652adcdabd046",
+    "sweep_summary.csv": "9c65afdcab637afd9f3445ecd70e358d82695a80dcd9bd9f808d6c9faed0320a"
+  }
+}

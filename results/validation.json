@@ -1,0 +1,27 @@
+{
+  "runtime": "local Windows CPU",
+  "geometry_tests_passed": 6,
+  "full_benchmark_runs": 2,
+  "csv_byte_identical": true,
+  "csv_sha256": {
+    "demo_depths.csv": "e6c88741f85bb9e6100d600f9ff155ed72ab994014f646b215b2982ba0b5bb2c",
+    "detection_summary.csv": "3ea88eda7b274e7f22601886ee91b07152f9ceda91e0c28dd70ecb7122c261e0",
+    "drift_detection.csv": "3fb354b54b625ccd5a02e214c94bba855c297b473aa56f79aa7f529ba58f12be",
+    "frame_metrics.csv": "79393aa4eb04c159b8913bb6579fedcf5a951fcd3ea8d2919d39bebe9b41072f",
+    "object_metrics.csv": "98269242e4d0cd13f4f80fc459f1200db3d8e8fecd4cf417d38652adcdabd046",
+    "sweep_summary.csv": "9c65afdcab637afd9f3445ecd70e358d82695a80dcd9bd9f808d6c9faed0320a"
+  },
+  "frame_configuration_rows": 1220,
+  "unique_dataset_factor_configurations": 34,
+  "checks": [
+    "fixed object point counts across perturbations",
+    "independent aggregate recomputation",
+    "calibration/evaluation frame split is disjoint",
+    "clean-only detection threshold",
+    "CSV hashes match run metadata",
+    "notebook code cells parse and embedded snapshot matches source",
+    "report images exist",
+    "new artifacts under 20 MB and secret scan passed"
+  ],
+  "google_colab_execution_verified": false
+}
